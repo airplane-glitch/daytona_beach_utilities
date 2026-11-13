@@ -9,9 +9,13 @@ Unofficial, and not affiliated with the City of Daytona Beach. It only reads; it
 
 ## Install
 
-1. In HACS, open the menu, choose **Custom repositories**, and add `https://github.com/airplane-glitch/daytona_beach_utilities` as an **Integration**.
-2. Download **Daytona Beach Utilities** and restart Home Assistant.
-3. Go to **Settings, Devices & services, Add integration**, pick **Daytona Beach Utilities**, and enter the portal username and password.
+1. In HACS, open the menu (three dots, top right), choose **Custom repositories**, and add `https://github.com/airplane-glitch/daytona_beach_utilities` with the category **Integration**.
+2. Search for **Daytona Beach Utilities** in HACS and click **Download**.
+3. **Restart Home Assistant** (Settings, System, then the power icon, **Restart Home Assistant**). The integration does not show up until it has restarted.
+4. After the restart, go to **Settings, Devices & services**, click **Add integration**, and search for **Daytona Beach Utilities**.
+5. A sign-in form opens. Enter the username and password for your customer portal login at [cc.codb.us](https://cc.codb.us) and click **Submit**.
+
+![The sign-in form in Home Assistant](docs/setup-form.png)
 
 If HACS says **"Repository ... exists in the store"** when you add it, it already knows the repository. Skip step 1, search for **Daytona** on the main HACS page, and download it from there. If it still does not show up, remove it from **Custom repositories** and add it again, making sure the category is **Integration**.
 
