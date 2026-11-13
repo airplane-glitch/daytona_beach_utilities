@@ -1,0 +1,12 @@
+{
+  "domain": "daytona_beach_utilities",
+  "name": "Daytona Beach Utilities",
+  "codeowners": ["@airplane-glitch"],
+  "config_flow": true,
+  "documentation": "https://github.com/airplane-glitch/daytona_beach_utilities",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/airplane-glitch/daytona_beach_utilities/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

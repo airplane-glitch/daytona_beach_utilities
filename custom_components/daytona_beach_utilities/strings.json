@@ -1,0 +1,29 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "City of Daytona Beach utilities",
+        "description": "Sign in with the username and password for the customer portal at cc.codb.us. Every account on the login is added as its own device.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in again",
+        "description": "The portal did not accept the saved password. Enter the current password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The portal did not accept that username and password.",
+      "cannot_connect": "The portal could not be reached. Try again in a few minutes."
+    },
+    "abort": {
+      "already_configured": "This login is already set up.",
+      "reauth_successful": "Signed in again."
+    }
+  }
+}
