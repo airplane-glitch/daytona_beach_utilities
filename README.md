@@ -1,5 +1,7 @@
 # Daytona Beach Utilities
 
+> **Early test version.** This is the first test of this integration. If you hit any errors, please [open an issue](https://github.com/airplane-glitch/daytona_beach_utilities/issues) and include the message from the Home Assistant log (remove any personal details first). Inspired by the [FPL integration](https://github.com/dotKrad/hass-fpl).
+
 A Home Assistant integration for the City of Daytona Beach utility bill (water, sewer, garbage, stormwater). It reads the
 customer portal at [cc.codb.us](https://cc.codb.us) the way the website does, so there is nothing to apply for.
 
