@@ -13,6 +13,8 @@ Unofficial, and not affiliated with the City of Daytona Beach. It only reads; it
 2. Download **Daytona Beach Utilities** and restart Home Assistant.
 3. Go to **Settings, Devices & services, Add integration**, pick **Daytona Beach Utilities**, and enter the portal username and password.
 
+If HACS says **"Repository ... exists in the store"** when you add it, it already knows the repository. Skip step 1, search for **Daytona** on the main HACS page, and download it from there. If it still does not show up, remove it from **Custom repositories** and add it again, making sure the category is **Integration**.
+
 Every account on the login is added as its own device, one for each house. The portal is checked every 6 hours, since bills change about once a month.
 
 ## Sensors, for each account
