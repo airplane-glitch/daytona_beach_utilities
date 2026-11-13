@@ -100,7 +100,10 @@ class DaytonaPortal:
 
     async def _read_account(self, customer: str, account: dict[str, str]) -> dict[str, Any]:
         # Select the account for this session first, otherwise the portal answers for whichever one was selected before.
-        await self._get_json("AccountSelector/selector/setcustomeraccountsessions", accountNumber=account["raw"])
+        # The portal answers this one with the bare word "Success", which is not an object, so the body is not parsed.
+        await self._request(
+            "GET", "AccountSelector/selector/setcustomeraccountsessions", params={"accountNumber": account["raw"]}
+        )
         summary = parse_summary(await self._get_json("BillingSummary/summary/data", custno=customer, acctno=account["token"]))
         today = date.today()
         history = await self._get_json(

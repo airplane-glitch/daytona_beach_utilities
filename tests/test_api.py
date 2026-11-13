@@ -46,7 +46,8 @@ def make_app(good_password="pw"):
 
     async def select(request):
         state["selected"]["sid"] = request.query["accountNumber"].split("|")[0]
-        return wrap({})
+        # The real portal answers with the bare JSON string "Success", not an object.
+        return web.Response(text=json.dumps("Success"), content_type="application/json")
 
     def current():
         return DATA[state["selected"]["sid"]]
